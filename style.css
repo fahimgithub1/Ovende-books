@@ -1048,28 +1048,34 @@ footer ul li a .fa-facebook{
     border-bottom: 1px solid grey;
 }
 
+.BigImg{
+    max-height: 365px;
+}
+
 .BigImg a{
     width: 100% !important; 
-    min-height: 359px;
     max-width: auto;
     display: flex;
+    max-height: 365px;
     justify-content: center;
 }
 
 .BigImg figure{
     width: 100% !important; 
-}
-
-.BigImg a{ 
+    max-height: 365px;
     display: flex;
-    justify-content: center;
 }
 
 .BigImg img{
     max-width: 100% !important; 
     border-radius: 7px;
-    margin: auto;
-    max-height: 370px;
+    margin: auto !important;
+    max-height: 100% !important;
+    width: auto !important;
+}
+
+body section div div div div a#jeans:not(.mz-no-rt-width-css) > .mz-figure:not(.mz-no-rt-width-css) > img {
+    width: auto !important;
 }
 
 .SmallImg{
@@ -1715,12 +1721,15 @@ footer ul li a .fa-facebook{
 }
 
 .relatedHader{
-    /* margin-bottom: 50px; */
     text-transform: uppercase;
     padding: 20px 0px;
     font-size: 20px;
     font-weight: 600;
     color: #EE5132;
+}
+
+.mz-hint{
+    display: none;
 }
 /* product page end */
 
